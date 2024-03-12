@@ -1,0 +1,37 @@
+/* styles.scss */
+.content {
+  margin: 0 auto;
+  width: 70%;
+}
+
+.content table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.content table tr {
+  border: 1px solid #ddd;
+  /* Add border around each <tr> element */
+}
+
+.content table th,
+.content table td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.content table th {
+  background-color: lavender;
+}
+
+h1 {
+  color: olivedrab;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,32 @@
+/* styles.scss */
+
+.content {
+	margin: 0 auto;
+	width: 70%;
+
+	table {
+		width: 100%;
+		border-collapse: collapse;
+
+		tr {
+			border: 1px solid #ddd; /* Add border around each <tr> element */
+		}
+
+		th,
+		td {
+			padding: 8px;
+			text-align: left;
+			border-bottom: 1px solid #ddd;
+		}
+
+		th {
+			background-color: lavender;
+		}
+	}
+}
+
+h1 {
+	color: olivedrab;
+	display: flex;
+	justify-content: center;
+}
