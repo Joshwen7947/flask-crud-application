@@ -41,6 +41,7 @@ def index():
             return redirect("/")
         except Exception as e:
             print(f"Error:{e}")
+            return f'Error:{e}'
     else:
         tasks = Todo.query.order_by(Todo.date_created).all()
         return render_template('index.html',tasks=tasks)
