@@ -1,32 +1,79 @@
-/* styles.scss */
+$primary-color: #007bff;
+$primary-hover-color: #0056b3;
+$success-color: #28a745;
+$success-hover-color: #218838;
+$title-color: #333;
+
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	background-color: #f0f0f0;
+}
 
 .content {
-	margin: 0 auto;
-	width: 70%;
+	max-width: 800px;
+	margin: 50px auto;
+	padding: 20px;
+	background-color: #fff;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	text-align: center;
+
+	h1 {
+		color: $title-color;
+	}
+
+	h4 {
+		color: #666;
+	}
 
 	table {
 		width: 100%;
+		margin-top: 20px;
 		border-collapse: collapse;
-
-		tr {
-			border: 1px solid #ddd; /* Add border around each <tr> element */
-		}
 
 		th,
 		td {
-			padding: 8px;
-			text-align: left;
-			border-bottom: 1px solid #ddd;
-		}
+			padding: 10px;
+			border: 1px solid #ccc;
 
-		th {
-			background-color: lavender;
+			th {
+				background-color: #f0f0f0;
+				color: #333;
+			}
 		}
 	}
-}
 
-h1 {
-	color: olivedrab;
-	display: flex;
-	justify-content: center;
+	a {
+		display: inline-block;
+		padding: 8px 16px;
+		margin: 5px;
+		border-radius: 20px;
+		background-color: $primary-color;
+		color: #fff;
+		text-decoration: none;
+		transition: background-color 0.3s ease;
+
+		&:hover {
+			background-color: $primary-hover-color;
+		}
+	}
+
+	input {
+		padding: 10px;
+		margin: 5px;
+		border: solid 1px;
+		border-radius: 5px;
+	}
+
+	#add_btn {
+		background-color: $success-color;
+		color: #fff;
+		cursor: pointer;
+
+		&:hover {
+			background-color: $success-hover-color;
+		}
+	}
 }
