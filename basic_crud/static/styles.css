@@ -1,37 +1,77 @@
-/* styles.scss */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+}
+
 .content {
-  margin: 0 auto;
-  width: 70%;
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.content h1 {
+  color: #333;
+}
+
+.content h4 {
+  color: #666;
 }
 
 .content table {
   width: 100%;
+  margin-top: 20px;
   border-collapse: collapse;
-}
-
-.content table tr {
-  border: 1px solid #ddd;
-  /* Add border around each <tr> element */
 }
 
 .content table th,
 .content table td {
-  padding: 8px;
-  text-align: left;
-  border-bottom: 1px solid #ddd;
+  padding: 10px;
+  border: 1px solid #ccc;
 }
 
-.content table th {
-  background-color: lavender;
+.content table th th,
+.content table td th {
+  background-color: #f0f0f0;
+  color: #333;
 }
 
-h1 {
-  color: olivedrab;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+.content a {
+  display: inline-block;
+  padding: 8px 16px;
+  margin: 5px;
+  border-radius: 20px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  -webkit-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
+}
+
+.content a:hover {
+  background-color: #0056b3;
+}
+
+.content input {
+  padding: 10px;
+  margin: 5px;
+  border: solid 1px;
+  border-radius: 5px;
+}
+
+.content #add_btn {
+  background-color: #28a745;
+  color: #fff;
+  cursor: pointer;
+}
+
+.content #add_btn:hover {
+  background-color: #218838;
 }
 /*# sourceMappingURL=styles.css.map */
